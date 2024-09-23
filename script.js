@@ -40,7 +40,7 @@ addBtn.addEventListener("click", function () {
     // Add listener to the todo item
     itemLabel.addEventListener("click", function () {
 
-        // the code
+        // the listener code
         if(todoItem.getAttribute("class") == "completed")
         {
             completedCount--;
@@ -52,11 +52,13 @@ addBtn.addEventListener("click", function () {
             todoItem.setAttribute("class", "completed");
         }
         
-      
+        countTodo.innerText = `Number of completed todos: ${completedCount}`;
+        // countTodo.innerText = "Number of completed todos " + completedCount + " " + ;
 
     });
 
     // Add to array
+    todoArray.push(text);
 
     // Set input empty
     inputTodo.value = "";
