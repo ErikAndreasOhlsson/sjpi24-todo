@@ -1,4 +1,4 @@
-// Check that JavaScript file is loaded
+// Check that JavaScript file is loaded!!!
 console.log("script.js is loaded!")
 
 // Declare variables
